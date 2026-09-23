@@ -21,7 +21,7 @@ The generated site is written to `site/`.
 
 ## Publishing
 
-GitHub Actions builds the site on pull requests and deploys it from the default branch with GitHub Pages.
+GitHub Actions builds the site on pull requests and deploys it from `main` with GitHub Pages.
 
 ### One-time GitHub Pages setup
 

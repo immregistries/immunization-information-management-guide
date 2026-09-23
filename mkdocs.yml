@@ -1,6 +1,5 @@
 site_name: Immunization Information Management Guide
 site_description: Independent documentation about immunization information management practices and models.
-site_url: https://immregistries.github.io/immunization-information-management-guide/
 repo_url: https://github.com/immregistries/immunization-information-management-guide
 theme:
   name: material

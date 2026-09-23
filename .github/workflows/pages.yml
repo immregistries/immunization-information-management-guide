@@ -33,8 +33,15 @@ jobs:
       - name: Build site
         run: mkdocs build --strict
 
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-build
+          path: site
+
   deploy:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: build
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -44,22 +51,14 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
         with:
-          python-version: "3.12"
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+          name: site-build
+          path: site
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
-
-      - name: Build site
-        run: mkdocs build --strict
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

@@ -1,0 +1,19 @@
+site_name: Immunization Information Management Guide
+site_description: Independent documentation about immunization information management practices and models.
+site_url: https://immregistries.github.io/immunization-information-management-guide/
+repo_url: https://github.com/immregistries/immunization-information-management-guide
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - About and scope: about-and-scope.md
+  - How this guide is written: how-this-guide-is-written.md
+  - Topic template: topic-template.md
+  - Draft topic placeholder: topics/draft-topic-placeholder.md
+  - References: references.md
+extra:
+  social: []
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true

@@ -7,12 +7,16 @@ nav:
   - Home: index.md
   - About and scope: about-and-scope.md
   - How this guide is written: how-this-guide-is-written.md
+  - Project direction:
+      - Current project addendum: project-direction/project-addendum.md
+      - Original functional framework: project-direction/original-functional-guide-framework.md
   - Topic template: topic-template.md
   - Draft topic placeholder: topics/draft-topic-placeholder.md
   - References: references.md
 extra:
   social: []
 markdown_extensions:
+  - admonition
   - tables
   - toc:
       permalink: true

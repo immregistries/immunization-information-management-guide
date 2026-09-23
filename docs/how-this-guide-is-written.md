@@ -28,11 +28,13 @@ Use the following plain-language labels directly in Markdown:
 
 When adding content:
 
-1. cite the source for each substantive factual claim
-2. identify whether the statement is source fact, observed practice, or synthesis
-3. note when a point varies by jurisdiction, governance model, or implementation approach
-4. avoid presenting interpretation or proposal as requirement
-5. leave an item marked **Unresolved** when the available evidence is incomplete
+1. use the [project addendum](project-direction/project-addendum.md) as the current editorial brief
+2. treat the [original functional framework](project-direction/original-functional-guide-framework.md) as a hypothesis and topic map, not as evidence
+3. cite the source for each substantive factual claim
+4. identify whether the statement is source fact, observed practice, or synthesis
+5. note when a point varies by jurisdiction, governance model, or implementation approach
+6. avoid presenting interpretation or proposal as requirement
+7. leave an item marked **Unresolved** when the available evidence is incomplete
 
 ## Review expectations
 

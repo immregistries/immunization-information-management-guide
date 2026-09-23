@@ -30,3 +30,9 @@ For the initial publishing foundation, the site is limited to:
 - placeholder topic content only
 
 Substantive topic pages should be added only with supporting sources and clear labeling of claim types.
+
+## Project direction
+
+The [project addendum](project-direction/project-addendum.md) is the current editorial brief for the guide. It describes the intended audience, publication approach, initial research sequence, and criteria for a credible starting draft.
+
+The [original functional guide framework](project-direction/original-functional-guide-framework.md) is retained as a planning input and provisional topic map. Its five-layer model, standards mappings, and gap analysis are hypotheses to test, not sources of requirements or established facts.

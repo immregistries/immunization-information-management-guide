@@ -23,16 +23,8 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Build site
-        run: mkdocs build --strict
+      - name: Build MkDocs site
+        uses: ./.github/actions/build-mkdocs
 
   package:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -45,19 +37,11 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      - name: Build site
-        run: mkdocs build --strict
+      - name: Build MkDocs site
+        uses: ./.github/actions/build-mkdocs
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
